@@ -1,0 +1,47 @@
+#root {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20;
+
+}
+
+label{
+  display: block;
+}
+input{
+  width: 80%;
+  margin-bottom: 20px;
+}
+.slider-data{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 25px;
+}
+.total{
+  margin-top: 10px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.selected{
+  background: #0a93dc5e;
+}
+button{
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: beige;
+}
+label{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.tenure{
+  margin-top: -10px;
+}
+p{
+  margin-top: 0;
+}
