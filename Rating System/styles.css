@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    gap: 10px;
+}
+.star{
+    font-size: 50px;
+    color: rgb(150, 145, 145);
+}
+.selected{
+    color:rgb(218, 218, 0);
+}
+.hovered{
+    color: rgb(223, 196, 14);
+}
+.star:hover{
+    cursor: pointer;
+}

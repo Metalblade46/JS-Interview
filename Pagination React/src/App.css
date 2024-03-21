@@ -1,0 +1,40 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.pagination{
+  margin: 15px;
+}
+img{
+  object-fit: fill;
+  padding: 15px;
+}
+.page{
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.selected{
+  background: #cccccc5e;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: grid;
+  margin: 10px;
+  grid-template-columns: repeat(5 ,1fr);
+  place-items: center ;
+  gap: 15px;
+}
+.card{
+  width: 280px;
+  height:350px;
+  border: 1px solid #ccc;
+  overflow:hidden;
+}
