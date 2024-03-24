@@ -44,7 +44,7 @@ string	   Whitespaces (includes spaces, tabs \t, newlines \n etc.) from the star
 
 // alert(Number(' 123 ')) //123
 
-// alert(Number(' 123z ')) //123
+// alert(Number(' 123z ')) //NaN
 
 // alert(Number(true)) //1
 
@@ -171,14 +171,14 @@ try calling obj.valueOf() or obj.toString(), whatever exists.
 
 //Another scenario
 
-let obj = {
-    // toString(){
-    //     return '4';
-    // },
-    valueOf(){
-        return 6;
-    }
-}
+// let obj = {
+//     // toString(){
+//     //     return '4';
+//     // },
+//     valueOf(){
+//         return 6;
+//     }
+// }
 
 
 //Coersion chain 
@@ -211,3 +211,5 @@ let obj = {
 // //  alert(+fun) // valueOf->2 as functions are objects
 // //  alert(fun+10)// valueof-> 12
 //  alert(fun()+10) //'undefined'+10 = NaN
+
+// alert('1'+2*3)//16, as * has higher precedence than +
