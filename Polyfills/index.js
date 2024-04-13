@@ -55,3 +55,21 @@ const arr = [1, 2, 3, 4, 5];
 // }
 // console.log(arr.myReduce((acc,curr)=>acc+curr,0));
 // console.log([].myReduce((acc,curr)=>acc+curr)); //TypeError
+
+//--------------------------Flat--------------------------------------
+
+// let arr2 = [1,2,[3,4,[5,[6,7]]]];
+// console.log(arr2.flat(3)); // default depth is 1
+
+// Array.prototype.myFlat = function(depth=1){
+//     if(!Array.isArray(this)) throw new TypeError(`${this}.flat is not a function`);
+//     if(depth==0) return this;
+//     let res =[];
+//     for(let elem of this){
+//         if(Array.isArray(elem)) res.push(...elem.myFlat(depth-1));
+//         else res.push(elem);
+//     }
+//     return res;
+// }
+// console.log(arr2.myFlat(3)); 
+// console.log('arr2'.myFlat(3)); //Typeerror
