@@ -27,7 +27,7 @@ function printName(hometown,state){
 
 // printName.apply(obj2,['Kolkata','West Bengal']); // only difference between call and apply is the way arguments are passed
 
-// //bind method, also used for substituting the this context, but doesn't invoke th function but returns a new context binded method
+// //bind method, also used for substituting the this context, but doesn't invoke the function but returns a new context binded method
 
 // let printObj2 = printName.bind(obj2,'Kolkata','West Bengal'); //arguments will also be bound
 // printObj2(); //works just like the same

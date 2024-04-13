@@ -1,3 +1,5 @@
+//Prototypes are the mechanism by which JavaScript objects inherit features from one another
+
 // const a = {
 //     getName(){
 //         return `I am ${this.name}`
@@ -9,11 +11,12 @@
 //     this.name = name
 // }
 
-// // Person.prototype=a // every instance of Person can get access to a's methods, need to change before creating the object
+// Person.prototype=a // every instance of Person can get access to a's methods, need to change before creating the object
 // const b = new Person('Lalu');
 // console.log(b.__proto__); // gives empty object containing the constructor which is the constructor function of the object
-// console.log(b.__proto__.constructor===Person); //gives true
-// console.log(b.constructor==Person); //true, goes up the chain and looks for constructor
+// console.log(b.__proto__.constructor===Person); //if not set,gives true, else false
+// console.log(b.constructor==Person); //true, goes up the chain and looks for constructor, if not set
+// console.log(b.__proto__===a); //true, if prototype is set
 
 // Object.setPrototypeOf(b,a); //we can set the prototype of a as b object
 
@@ -22,7 +25,9 @@
 // Person.prototype=a // if changed here, b will still have the previous prototype with which it was created, any new person created will have a's properties
 
 // const c = new Person('David')
-// console.log(c.getName())// prints I am David
+// Object.setPrototypeOf(c,a);// This can also be done but only c will have access to a's functions, 
+//if we want all Persons to have 'a' as prototype, we need to set Person's prototype as a
+// console.log(c.getName())// prints I am David, if persons prototype is set as a.
 
 // console.log(b.__proto__); //gives a, so changing prototype makes the instance lose the consructor function
 // console.log(b.getName()); //gives I am Lalu as it goes up the prototype chain
